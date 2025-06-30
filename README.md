@@ -197,7 +197,7 @@ Loans
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd BharatGodam-Work---Private-main
+   cd bharatgodam-warehouse-management-system
    ```
 
 2. **Install dependencies**
