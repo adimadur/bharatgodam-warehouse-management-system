@@ -54,10 +54,7 @@ require('./src/controllers/expiredBookings.controller')
 
 app.use(
   cors({
-    origin: [
-      'https://bharath-godam-admin-panel.vercel.app',
-      'http://localhost:3000',
-    ],
+    origin: ['http://localhost:3000'],
     methods: 'GET, POST, PUT, DELETE, OPTIONS',
     allowedHeaders: 'Origin, X-Requested-With, Content-Type, Accept',
   }),
@@ -82,5 +79,11 @@ app.listen(port, async () => {
       ` ${process.env.NODE_ENV} `,
     )} mode`,
   )
+
   await dbConnection()
+  logger.info(
+    `${chalk.greenBright('API Docs available at:')} ${chalk.underline.blue(
+      'https://www.postman.com/security-saganist-92445886/bharatgodam-wms',
+    )}`,
+  )
 })

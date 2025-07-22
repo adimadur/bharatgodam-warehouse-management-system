@@ -27,5 +27,16 @@
     "winston": "^3.13.0",
     "winston-cloudwatch": "^6.2.0",
     "winston-daily-rotate-file": "^5.0.0"
-  }
+  },
+  "name": "bharatgodam",
+  "version": "1.0.0",
+  "description": "A comprehensive digital platform for agricultural commodity storage and warehouse management, built with Node.js, Express, and MongoDB.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
 }
