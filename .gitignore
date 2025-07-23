@@ -3,3 +3,4 @@ logs
 combined.log
 uploads
 .env
+.vscode

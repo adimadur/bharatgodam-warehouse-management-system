@@ -16,7 +16,11 @@ app.use(cors())
 app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
-  res.send('Welcome to bharat-Godam !')
+  // res.type('text').send('Welcome to bharat-Godam !\n\nAPI Docs available at: https://www.postman.com/security-saganist-92445886/bharatgodam-wms')
+  res.send(`
+    <h1>Welcome to Bharat-Godam</h1>
+    <p>API Docs available at <a href="https://www.postman.com/security-saganist-92445886/bharatgodam-wms" target="_blank">https://www.postman.com/security-saganist-92445886/bharatgodam-wms</a></p>
+  `)
 })
 
 const logMiddleware = (req, res, next) => {
